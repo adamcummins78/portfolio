@@ -1,0 +1,14 @@
+/* Mobile First */
+@media  (min-width: 900px) {
+
+.welcome {
+color: red;
+}
+}
+
+@media  (max-width: 900px) {
+
+    .welcome {
+        color: orange;
+    }
+}
