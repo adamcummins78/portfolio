@@ -12,3 +12,41 @@ color: red;
         color: orange;
     }
 } */
+
+.navigate {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+}
+
+.item { 
+color: whitesmoke;
+margin: auto; }
+
+.intro {
+text-align: center;
+padding-top: 10em;
+padding-bottom: 12em;
+margin: auto;
+background: linear-gradient(slategray, transparent 90%),
+              linear-gradient(0deg, #fff, transparent);
+background-size: cover;
+}
+
+.intro-1 {
+    font: 2em Impact, Charcoal, sans-serif;
+    text-transform: uppercase;
+}
+.intro-2 {
+    font: helvetica;
+}
+
+.Adam-img   {
+border-radius: 200px;
+
+}
