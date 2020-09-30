@@ -21,9 +21,9 @@ color: red;
     background-color: black;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid white;
 }
-
+ 
 .item { 
 color: whitesmoke;
 margin: auto; }
@@ -32,15 +32,15 @@ margin: auto; }
 text-align: center;
 padding-top: 10em;
 padding-bottom: 12em;
-margin: auto;
-background: linear-gradient(slategray, transparent 90%),
+width: 100%;
+background: linear-gradient(slategrey, transparent 90%),
               linear-gradient(0deg, #fff, transparent);
-background-size: cover;
 }
 
 .intro-1 {
     font: 2em Impact, Charcoal, sans-serif;
     text-transform: uppercase;
+    color: chartreuse;
 }
 .intro-2 {
     font: helvetica;
