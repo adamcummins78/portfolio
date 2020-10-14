@@ -20,33 +20,43 @@ color: red;
     left: 0;
     background-color: black;
     display: flex;
-    justify-content: space-between;
     border-bottom: 2px solid white;
+    
 }
- 
+
 .item { 
 color: whitesmoke;
-margin: auto; }
+margin: auto;
+}
+
+.logo   {
+    padding-left: 2em;
+}
 
 .intro {
 text-align: center;
-padding-top: 10em;
-padding-bottom: 12em;
+padding-top: 20em;
+padding-bottom: 25em;
 width: 100%;
 background: linear-gradient(slategrey, transparent 90%),
               linear-gradient(0deg, #fff, transparent);
+display: flex;
 }
 
 .intro-1 {
     font: 2em Impact, Charcoal, sans-serif;
     text-transform: uppercase;
-    color: chartreuse;
+    color: black;
 }
 .intro-2 {
     font: helvetica;
+    margin: auto;
+}
+
+.intro-1, .intro-2 {
+flex-direction: column;
 }
 
 .Adam-img   {
 border-radius: 200px;
-
 }
