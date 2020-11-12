@@ -9,11 +9,13 @@
 <body>
     <header>
             <nav class="navigate">
-                <span class="logo"><img src="images/logo.JPG" alt="Logo image"></img></span>
-                    <div id="links">
-                        <ul id="item">
+                <div class="logo"><img src="images/logo.JPG" alt="Logo image"></img></div>
+                    <div class="links">
+                        <ul class="item">
                             <li><a href="#">About</a></li>
+                            <li>|</li>
                             <li><a href="#">Projects</a></li>
+                            <li>|</li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -26,8 +28,10 @@
             <img class="Adam-img" src="images/profilePic.jpg" alt="Photo of Adam Cummins">
         </div>
         <div class="about-me">
-            <img class="fam-pic" src="images/family.jpg" alt="Photo of Family">
-            <div class="container">
+            <div class="container-1">
+                <img class="fam-pic" src="images/family.jpg" alt="Photo of Family">
+            </div>
+            <div class="container-2">
                 <h2>All About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
@@ -35,24 +39,24 @@
         <div>
             <h2 class="title-pro">Current & Past Projects</h2>
             <ul class="projects">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
+                <li><a class="html" href="#">HTML</a></li>
+                <li><a class="css" href="#">CSS</a></li>
+                <li><a class="java" href="#">JavaScript</a></li>
             </ul>
         </div>
         <div>
             <h2>Thanks for stopping by,</h2>
             <h3>feel free to reach out</h3>
-            <ul>
+            <ul class="contacts">
                 <li><a href="#"><img src="images/email.png" alt="email icon"></a></li>
                 <li><a href="#"><img src="images/github.png" alt="github icon"></a></li>
                 <li><a href="#"><img src="images/linkd.png" alt="linkd-in icon"></a></li>
             </ul>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <span>&copy;2020 All rights reserved</span>
-        <span>Website by <a href="#">Adam Cummins</a></span>
+        <span>Website by <a class="foot-link" href="#">Adam Cummins</a></span>
     </footer>
 </body>
 </html>
