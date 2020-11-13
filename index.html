@@ -12,11 +12,11 @@
                 <div class="logo"><img src="images/logo.JPG" alt="Logo image"></img></div>
                     <div class="links">
                         <ul class="item">
-                            <li><a href="#">About</a></li>
+                            <li><a href="#about">About</a></li>
                             <li>|</li>
-                            <li><a href="#">Projects</a></li>
+                            <li><a href="#projects">Projects</a></li>
                             <li>|</li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
             </nav>
@@ -29,7 +29,7 @@
         </div>
         <div class="about-me">
             <div class="container-1">
-                <img class="fam-pic" src="images/family.jpg" alt="Photo of Family">
+                <img id="about" class="fam-pic" src="images/family.jpg" alt="Photo of Family">
             </div>
             <div class="container-2">
                 <h2>All About Me</h2>
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div>
-            <h2 class="title-pro">Current & Past Projects</h2>
+            <h2 id="projects" class="title-pro">Current & Past Projects</h2>
             <ul class="projects">
                 <li><a class="html" href="#">HTML</a></li>
                 <li><a class="css" href="#">CSS</a></li>
@@ -45,9 +45,23 @@
             </ul>
         </div>
         <div>
-            <h2>Thanks for stopping by,</h2>
-            <h3>feel free to reach out</h3>
-            <ul class="contacts">
+            <form action="index.html" method="POST">
+                <h2 class="thanks">Thanks for stopping by, feel free to reach out!</h2>
+                <fieldset>
+                    <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="visitor_name">
+                    <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="visitor_lastName">
+                    <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="visitor_email">
+                </fieldset>
+                <fieldset>
+                    <label for="brief">Comments or Remarks:</label>
+                        <textarea id="brief" name="brief-mess">Comments or tips...</textarea>
+                </fieldset>
+                <button type="submit">Reach Out!</button>
+            </form>
+            <ul id="contact" class="contacts">
                 <li><a href="#"><img src="images/email.png" alt="email icon"></a></li>
                 <li><a href="#"><img src="images/github.png" alt="github icon"></a></li>
                 <li><a href="#"><img src="images/linkd.png" alt="linkd-in icon"></a></li>

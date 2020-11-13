@@ -1,36 +1,8 @@
-/* Mobile First
-@media  (min-width: 900px) {
-
-.welcome {
-color: red;
-}
-} */
-
-@media  (max-width: 690px) {
-    .logo {
-        display: none;
-    }
-
-    .links {
-        text-align: center;
-    }
-
-    .intro {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-me {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
+/* Mobile First */
 body {
     margin: 0;
     padding: 0;
 }
-
                                     /* Header and Navigation Bar */
 .navigate {
     position: fixed;
@@ -47,14 +19,12 @@ body {
 }
 
 .logo {
-    display: inline;
-    padding-left: 5em;
-    padding-top: 5em;
+    display: none;
 }
 
 .links {
     float: right;
-    padding-right: 8em;
+    padding-right: 6em;
 }
 
 .links li {
@@ -71,8 +41,8 @@ body {
                                     /* Title and Profile Picture */
 
 .intro {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    display: flex;
+    flex-direction: column;
     height: 25em;
     padding-top: 12em;
     padding-bottom: 12em;
@@ -86,22 +56,16 @@ body {
     font: 2em Impact, Charcoal, sans-serif;
     text-transform: uppercase;
     color: white;
-    grid-row: 1 / 3;
-    grid-column: 1 / 3;
     margin: auto;
 }
 .intro-2 {
     font: helvetica;
     margin: auto;
-    grid-row: 2 / 5;
-    grid-column: 1 / 3;
     color: white;
 }
 
 .Adam-img   {
     border-radius: 200px;
-    grid-row: 1 / 5;
-    grid-column: 3 / 3;
     margin: auto;
     border: 6px solid white;
 }
@@ -111,12 +75,27 @@ body {
 
 .about-me {
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(50, 164, 230);
+    flex-direction: column;
+    background-color: #173F5F;
     border: .25em black solid ;
 }
 
-.about-me h2 {
+.container-1 {
+    margin: auto;
+}
+
+.container-2 {
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.container-2 p {
+    padding: 10px 15px;
+}
+
+.container-2 h2 {
     text-align: center;
 }
 
@@ -134,21 +113,15 @@ body {
     text-align: center;
 }
 
-.html {
-    font-size: 2em;
-    color: black;
-}
-
-.css {
+.css, .html, .java {
     font-size: 2em;
     color: rgb(83, 188, 236)
 }
 
-.css:hover {
+.css:hover, .java:hover, .html:hover {
     color: black;
-    transform: rotate(5%);
-    transform: scale(1.2);
 }
+
 .projects {
     list-style: none;
     display: flex;
@@ -159,8 +132,9 @@ body {
     text-decoration: none;
 }
 
-                                        /* Contact Links and Comment Box */
 
+
+                                        /* Contact Links and Comment Box */
 
 .contacts {
     list-style: none;
@@ -168,9 +142,49 @@ body {
     justify-content: space-around;
 }
 
+                                            /* Contact Box */
+.thanks {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 50px;
+    }
+
+                                
+                                        
+form {
+    max-width: 350px;
+    margin: auto;
+    background-color: slategray;
+    border-radius: 8px;
+    border: 5px solid black;
+    padding: 10px 20px;
+}
+
+input, textarea {
+    width: 75%;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+}
+
+button {
+    padding: 10px 25px 10px 25px;
+    background-color: #173F5F;
+    width: 100%;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+}
+
                                         /* Footer */
 
 .footer {
+    font-size: .75em;
     color: white;
     text-align: center;
     border-top: 2px solid black;
@@ -180,4 +194,63 @@ body {
 .foot-link {
     text-decoration: none;
     color: white;
+}
+
+                                                   /* Media Queries */
+
+@media  (min-width: 641px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        height: 25em;
+        padding-top: 12em;
+        padding-bottom: 12em;
+        width: 100%;
+        text-align:center;
+    }
+
+    .intro-1 {
+    font: 2em Impact, Charcoal, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    margin: auto;
+}
+    .intro-2 {
+    font: helvetica;
+    margin: auto;
+    grid-row: 2 / 5;
+    grid-column: 1 / 3;
+    color: white;
+}
+
+.Adam-img   {
+    border-radius: 200px;
+    grid-row: 1 / 5;
+    grid-column: 3 / 3;
+    margin: auto;
+    border: 6px solid white;
+}
+.about-me {
+    display: flex;
+    flex-direction: row;
+    background-color: #173F5F;
+    border: .25em black solid ;
+}
+
+.container-2 {
+    margin: auto;
+    color: white;
+    margin-left: 10px;
+
+}
+}
+
+@media (min-width: 491px) {
+    .logo {
+        display: inline;
+        padding-left: 5em;
+        padding-top: 5em;
+    }
 }
