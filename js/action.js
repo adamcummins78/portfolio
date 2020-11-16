@@ -5,16 +5,9 @@ const form = document.getElementById("form");
 const errorVar = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-    let messages = []
+    
     if (firstName.value === '' || name.value == null) {
-        messages.push('Please enter your name.')
+        alert('Please enter your name.');
+        e.preventDefault();
     }
-
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorVar.innerText = messages.join(',')
-    }
-        
-
-
 })
