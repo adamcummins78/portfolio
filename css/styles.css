@@ -107,32 +107,39 @@ body {
     border: 6px solid white;
 }
 
-                                        /* Projects */
+                                        /* Projects & JS Object */
 
 .title-pro {
     text-align: center;
+    margin-top: 50px;
 }
 
-.css, .html, .java {
-    font-size: 2em;
-    color: rgb(83, 188, 236)
-}
-
-.css:hover, .java:hover, .html:hover {
-    color: black;
-}
-
-.projects {
-    list-style: none;
+                                        
+.jsProject {
+    background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-.projects a {
-    text-decoration: none;
+.jsProjects {
+    background-color:#173F5F;
+    border: 3px solid white;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 5px;
+    color: white;
 }
 
-
+.jsPics {
+    border-radius: 150px;
+    border: 3px solid white;
+}
 
                                         /* Contact Links and Comment Box */
 

@@ -39,15 +39,13 @@
         </div>
         <div>
             <h2 id="projects" class="title-pro">Current & Past Projects</h2>
-            <ul class="projects">
-                <li><a class="html" href="#">HTML</a></li>
-                <li><a class="css" href="#">CSS</a></li>
-                <li><a class="java" href="#">JavaScript</a></li>
-            </ul>
+            <div class="jsProject" id="viewProject">
+
+            </div>
         </div>
         <div>
-            <div id="error">
-            <form id="form" action="index.html" method="POST">
+            <div>
+            <form id="form" name="contactForm" action="index.html" onsubmit="return validateForm()" method="POST">
                 <h2 class="thanks">Thanks for stopping by, feel free to reach out!</h2>
                 <fieldset>
                     <label for="firstName">First Name:</label>
