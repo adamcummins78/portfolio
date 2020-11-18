@@ -132,13 +132,28 @@ body {
     height: auto;
     border-radius: 10px;
     margin: 10px;
-    padding-bottom: 5px;
+    padding: 5px;
     color: white;
+}
+
+.jsPics:hover {
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
 }
 
 .jsPics {
     border-radius: 150px;
     border: 3px solid white;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.1);}
+    100% {transform: scale(1);}
 }
 
                                         /* Contact Links and Comment Box */
@@ -147,6 +162,18 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-around;
+}
+
+.emblem {
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -ms-transition: -ms-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+
+.emblem:hover {
+    -webkit-transform: rotateZ(-10deg) scale(1.5);
+    -ms-transform: rotateZ(-10deg) scale(1.5);
+    transform: rotateZ(-10deg) scale(1.5);
 }
 
                                             /* Contact Box */
@@ -258,5 +285,17 @@ button {
         overflow: auto;
         white-space: nowrap;
         flex-direction: row;
+    }
+}
+
+@media (min-width: 900px) {
+    .bottom {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    .contacts {
+        flex-direction: column;
     }
 }
