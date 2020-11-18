@@ -235,7 +235,6 @@ button {
 @media  (min-width: 641px) {
 .intro {
      display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
     }
 
 .intro-1 {
